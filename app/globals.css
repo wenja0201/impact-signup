@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f3ee;
+  --accent: #d43f2e;
+  --accent-dim: #8f2c20;
+  --line: #2a2a28;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
